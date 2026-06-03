@@ -270,8 +270,8 @@ Métricas evaluadas:
 | Modelo | Accuracy | Macro Precision | Macro Recall | Macro F1-Score |
 |----------|----------|----------|----------|----------|
 | Original | 0.75 | 0.76 | 0.76 | 0.75 |
-| Filtro de Mediana | 0.70 | 0.71 | 0.70 | 0.69 |
-| Ecualización HSV | 0.75 | 0.77 | 0.74 | 0.75 |
+| Filtro de Mediana | 0.75 | 0.77 | 0.74 | 0.75 |
+| Ecualización HSV | 0.70 | 0.71 | 0.70 | 0.69 |
 
 ## Observaciones
 
