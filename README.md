@@ -25,11 +25,6 @@ Clases:
 * Rose
 * Sunflower
 * Tulip
-
-Fuente:
-
-https://www.kaggle.com/datasets/alxmamaev/flowers-recognition
-
 ---
 
 ## Técnicas Implementadas
@@ -138,22 +133,20 @@ drive.mount('/content/drive')
 ## Entrenamiento de la CNN
 
 1. Abrir el notebook `Proyecto_Final_RGB_Flowers.ipynb`.
-2. Modificar la variable de ruta del dataset (flowers) a tu google drive.
+2. Modificar la variable de ruta del dataset a tu google drive.
+
 ```python
-DATASET_DIR = "/content/drive/MyDrive"
+DATASET_DIR = "/content/drive/MyDrive/flowers/"
 ```
 4. Ejecutar el entrenamiento utilizando:
 
-   * Dataset original (flowers).
-   * Dataset procesado con filtro de mediana.
-   * Dataset procesado con ecualización HSV.
+   * Dataset original (flowers/).
   
 5. Realizar y Guardar el resultado de una Prueba Interactiva de la sección 8. del Entrenamiento de la CNN.
 
 6. Registrar las métricas obtenidas en cada entrenamiento.
 
 Métricas evaluadas:
-
 * Accuracy
 * Precision
 * Recall
@@ -163,31 +156,105 @@ Métricas evaluadas:
 
 ---
 
-## Ejecución del Filtro de Mediana
+7. Abrir el notebook `preprocesamiento_Filtro_Mediana.ipynb`.
+8. Modificar la variable de ruta del dataset original a tu google drive.
+
+```python
+input_dir = "/content/drive/MyDrive/flowers"
+```
+9. Modificar la variable de ruta del dataset de salida a tu google drive.
+
+```python
+output_dir = "/content/drive/MyDrive/flowers_preprocesadas_Filtro_Mediana"
+```
+10. Ejecutar Filtro de Mediana
 
 ```bash
 python preprocesamiento_Filtro_Mediana.ipynb
 ```
-
 Resultado:
 
 ```text
 flowers_preprocesadas_Filtro_Mediana/
+│
+├── daisy
+├── dandelion
+├── rose
+├── sunflower
+└── tulip
 ```
+11. Regresar al notebook `Proyecto_Final_RGB_Flowers.ipynb`.
+12. Modificar la variable de ruta del dataset a tu google drive.
+
+```python
+DATASET_DIR = "/content/drive/MyDrive/flowers_preprocesadas_Filtro_Mediana/"
+```
+13. Ejecutar el entrenamiento utilizando:
+
+   * Dataset procesado con filtro de mediana (flowers_preprocesadas_Filtro_Mediana/).
+
+14. Realizar y Guardar el resultado de una Prueba Interactiva de la sección 8. del Entrenamiento de la CNN.
+
+15. Registrar las métricas obtenidas en cada entrenamiento.
+
+Métricas evaluadas:
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+* Matriz de Confusión
+---
 
 ---
 
-## Ejecución de la Ecualización HSV
+16. Abrir el notebook `preprocesamiento_HSV.ipynb`.
+17. Modificar la variable de ruta del dataset original a tu google drive.
+
+```python
+input_dir = "/content/drive/MyDrive/flowers"
+```
+18. Modificar la variable de ruta del dataset de salida a tu google drive.
+
+```python
+output_dir = "/content/drive/MyDrive/flowers_preprocesadas_HSV"
+```
+10. Ejecutar ecualización HSV
 
 ```bash
 python preprocesamiento_HSV.ipynb
 ```
-
 Resultado:
 
 ```text
 flowers_preprocesadas_HSV/
+│
+├── daisy
+├── dandelion
+├── rose
+├── sunflower
+└── tulip
 ```
+19. Regresar al notebook `Proyecto_Final_RGB_Flowers.ipynb`.
+20. Modificar la variable de ruta del dataset a tu google drive.
+
+```python
+DATASET_DIR = "/content/drive/MyDrive/flowers_preprocesadas_HSV/"
+```
+13. Ejecutar el entrenamiento utilizando:
+
+   * Dataset procesado con equalización HSV (flowers_preprocesadas_HSV/).
+
+9. Realizar y Guardar el resultado de una Prueba Interactiva de la sección 8. del Entrenamiento de la CNN.
+
+10. Registrar las métricas obtenidas en cada entrenamiento.
+
+Métricas evaluadas:
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+* Matriz de Confusión
+---
 
 ---
 
