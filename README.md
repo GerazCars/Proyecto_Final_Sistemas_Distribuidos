@@ -77,6 +77,8 @@ Proyecto/
 │
 ├── flowers_preprocesadas_HSV/
 │
+├── imagenes/
+│
 ├── preprocesamiento_HSV.py
 │
 ├── preprocesamiento_Filtro_Mediana.py
