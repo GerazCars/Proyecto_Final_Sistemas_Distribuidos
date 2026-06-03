@@ -177,34 +177,13 @@ Métricas evaluadas:
 
 ![Original](imagenes/original_matriz_confusión.jpg)
 
-| Métrica   | Valor     |
-| --------- | --------- |
-| Accuracy  | PENDIENTE |
-| Precision | PENDIENTE |
-| Recall    | PENDIENTE |
-| F1-Score  | PENDIENTE |
-
 ### Modelo con Filtro de Mediana
 
 ![Mediana](imagenes/mediana_matriz_confusión.jpg)
 
-| Métrica   | Valor     |
-| --------- | --------- |
-| Accuracy  | PENDIENTE |
-| Precision | PENDIENTE |
-| Recall    | PENDIENTE |
-| F1-Score  | PENDIENTE |
-
 ### Modelo con Ecualización HSV
 
 ![HSV](imagenes/hsv_matriz_confusión.jpg)
-
-| Métrica   | Valor     |
-| --------- | --------- |
-| Accuracy  | PENDIENTE |
-| Precision | PENDIENTE |
-| Recall    | PENDIENTE |
-| F1-Score  | PENDIENTE |
 
 ---
 
