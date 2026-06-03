@@ -153,22 +153,6 @@ Métricas evaluadas:
 * F1-Score
 * Matriz de Confusión
 ---
-
-## Ejemplo Visual
-
-### Imagen Original
-
-![Original](imagenes/original.jpg)
-
----
-
-## Resultado
-
-### Modelo Original
-
-![Original](imagenes/original_matriz_confusión.jpg)
-
----
 ---
 
 7. Abrir el notebook `preprocesamiento_Filtro_Mediana.ipynb`.
@@ -182,11 +166,8 @@ input_dir = "/content/drive/MyDrive/flowers"
 ```python
 output_dir = "/content/drive/MyDrive/flowers_preprocesadas_Filtro_Mediana"
 ```
-10. Ejecutar todas las celdas del Filtro de Mediana
+10. Ejecutar todas las celdas del preprocesamiento_Filtro_Mediana.ipynb
 
-```bash
-python preprocesamiento_Filtro_Mediana.ipynb
-```
 Resultado:
 
 ```text
@@ -219,21 +200,6 @@ Métricas evaluadas:
 * F1-Score
 * Matriz de Confusión
 ---
-## Ejemplo Visual
-
-### Imagen Procesada con Filtro de Mediana
-
-![Mediana](imagenes/median.jpg)
-
----
-
-## Resultados
-
-### Modelo con Filtro de Mediana
-
-![Mediana](imagenes/mediana_matriz_confusión.jpg)
-
----
 ---
 
 16. Abrir el notebook `preprocesamiento_HSV.ipynb`.
@@ -247,11 +213,8 @@ input_dir = "/content/drive/MyDrive/flowers"
 ```python
 output_dir = "/content/drive/MyDrive/flowers_preprocesadas_HSV"
 ```
-19. Ejecutar todas las celdas de ecualización HSV
+19. Ejecutar todas las celdas de preprocesamiento_HSV.ipynb
 
-```bash
-python preprocesamiento_HSV.ipynb
-```
 Resultado:
 
 ```text
@@ -284,27 +247,31 @@ Métricas evaluadas:
 * F1-Score
 * Matriz de Confusión
 ---
+---
 
-## Ejemplo Visual
+### Original
 
-### Imagen Procesada con Ecualización HSV
+![Original](imagenes/original.jpg)
 
-![HSV](imagenes/hsv.jpg)
+![Original](imagenes/original_matriz_confusión.jpg)
 
 ---
 
-## Resultados
+### Filtro de Mediana
 
-### Modelo con Ecualización HSV
+![Mediana](imagenes/median.jpg)
+
+![Mediana](imagenes/mediana_matriz_confusión.jpg)
+
+---
+
+### Ecualización HSV
+
+![HSV](imagenes/hsv.jpg)
 
 ![HSV](imagenes/hsv_matriz_confusión.jpg)
 
 ---
----
-
-## Conclusiones
-
-Este proyecto permitió analizar cómo diferentes técnicas de preprocesamiento pueden influir en la capacidad de clasificación de una CNN. Los resultados obtenidos permiten determinar cuál técnica proporciona una mejor representación de las características visuales presentes en las flores.
 
 ## Comparación Visual
 
@@ -322,6 +289,13 @@ Este proyecto permitió analizar cómo diferentes técnicas de preprocesamiento 
 | Modelo Original | Filtro de Mediana | Ecualización HSV |
 |----------------|------------------|------------------|
 | ![](imagenes/original_matriz_confusión.jpg) | ![](imagenes/mediana_matriz_confusión.jpg) | ![](imagenes/hsv_matriz_confusión.jpg) |
+
+---
+---
+
+## Conclusiones
+
+Este proyecto permitió analizar cómo diferentes técnicas de preprocesamiento pueden influir en la capacidad de clasificación de una CNN. Los resultados obtenidos permiten determinar cuál técnica proporciona una mejor representación de las características visuales presentes en las flores.
 
 ---
 
