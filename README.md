@@ -93,7 +93,7 @@ Antes de ejecutar los scripts de preprocesamiento es necesario descargar el conj
 
 Dataset utilizado:
 
-https://www.kaggle.com/datasets/alxmamaev/flowers-recognition
+[Flowers Recognition Dataset](https://www.kaggle.com/datasets/alxmamaev/flowers-recognition)
 
 ### Pasos
 
@@ -234,7 +234,7 @@ DATASET_DIR = "/content/drive/MyDrive/flowers_preprocesadas_HSV/"
 ```
 22. Ejecutar todas las celdas del entrenamiento utilizando:
 
-   * Dataset procesado con equalización HSV (flowers_preprocesadas_HSV/).
+   * Dataset procesado con ecualización HSV (flowers_preprocesadas_HSV/).
 
 23. Realizar y Guardar el resultado de una Prueba Interactiva de la sección 8. del Entrenamiento de la CNN.
 
@@ -266,6 +266,13 @@ Métricas evaluadas:
 |----------------|------------------|------------------|
 | ![](imagenes/original_matriz_confusión.jpg) | ![](imagenes/mediana_matriz_confusión.jpg) | ![](imagenes/hsv_matriz_confusión.jpg) |
 
+
+| Modelo | Accuracy | Macro Precision | Macro Recall | Macro F1-Score |
+|----------|----------|----------|----------|----------|
+| Original | 0.75 | 0.76 | 0.76 | 0.75 |
+| Filtro de Mediana | 0.70 | 0.71 | 0.70 | 0.69 |
+| Ecualización HSV | 0.75 | 0.77 | 0.74 | 0.75 |
+
 ### Observaciones
 
 - El modelo original obtuvo un Accuracy de 75%, sirviendo como referencia para evaluar el impacto de las técnicas de preprocesamiento.
@@ -281,11 +288,13 @@ Métricas evaluadas:
 
 ## Conclusiones
 
-Este proyecto permitió evaluar el efecto de diferentes técnicas de preprocesamiento sobre el desempeño de una CNN para clasificación de flores.
+Este proyecto permitió evaluar el impacto de diferentes técnicas de preprocesamiento sobre el desempeño de una Red Neuronal Convolucional para la clasificación de flores.
 
-Mediante la comparación de Accuracy, Precision, Recall, F1-Score y Matriz de Confusión fue posible determinar qué técnica proporcionó una mejor representación visual para el proceso de clasificación.
+Los resultados mostraron que el Filtro de Mediana redujo el Accuracy del modelo de 75% a 70%, indicando que la eliminación de ciertos detalles visuales afectó negativamente el proceso de clasificación.
 
-Los resultados obtenidos muestran que el preprocesamiento puede influir significativamente en la capacidad de aprendizaje de una red neuronal, mejorando o degradando su desempeño dependiendo de la técnica aplicada.
+Por otro lado, la Ecualización del Histograma en HSV mantuvo el Accuracy del modelo original (75%) y mejoró la capacidad de identificación de algunas clases específicas, especialmente Tulip, al incrementar su Recall de 0.71 a 0.81.
+
+Con base en los resultados obtenidos, la Ecualización HSV fue la técnica de preprocesamiento más adecuada para este dataset, ya que logró preservar la información visual relevante sin degradar el desempeño global de la red neuronal.
 
 ---
 ---
