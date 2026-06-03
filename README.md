@@ -223,7 +223,7 @@ Métricas evaluadas:
 
 ### Imagen Procesada con Filtro de Mediana
 
-![Mediana](imagenes/medianan.jpg)
+![Mediana](imagenes/median.jpg)
 
 ---
 
