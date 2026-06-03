@@ -154,6 +154,21 @@ Métricas evaluadas:
 * Matriz de Confusión
 ---
 
+## Ejemplo Visual
+
+### Imagen Original
+
+![Original](imagenes/original.jpg)
+
+---
+
+## Resultado
+
+### Modelo Original
+
+![Original](imagenes/original_matriz_confusión.jpg)
+
+---
 ---
 
 7. Abrir el notebook `preprocesamiento_Filtro_Mediana.ipynb`.
@@ -204,7 +219,21 @@ Métricas evaluadas:
 * F1-Score
 * Matriz de Confusión
 ---
+## Ejemplo Visual
 
+### Imagen Procesada con Filtro de Mediana
+
+![Mediana](imagenes/medianan.jpg)
+
+---
+
+## Resultados
+
+### Modelo con Filtro de Mediana
+
+![Mediana](imagenes/mediana_matriz_confusión.jpg)
+
+---
 ---
 
 16. Abrir el notebook `preprocesamiento_HSV.ipynb`.
@@ -256,17 +285,7 @@ Métricas evaluadas:
 * Matriz de Confusión
 ---
 
----
-
 ## Ejemplo Visual
-
-### Imagen Original
-
-![Original](imagenes/original.jpg)
-
-### Imagen Procesada con Filtro de Mediana
-
-![Mediana](imagenes/mediana.jpg)
 
 ### Imagen Procesada con Ecualización HSV
 
@@ -276,18 +295,11 @@ Métricas evaluadas:
 
 ## Resultados
 
-### Modelo Original
-
-![Original](imagenes/original_matriz_confusión.jpg)
-
-### Modelo con Filtro de Mediana
-
-![Mediana](imagenes/mediana_matriz_confusión.jpg)
-
 ### Modelo con Ecualización HSV
 
 ![HSV](imagenes/hsv_matriz_confusión.jpg)
 
+---
 ---
 
 ## Conclusiones
