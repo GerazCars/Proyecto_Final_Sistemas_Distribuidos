@@ -79,9 +79,9 @@ Proyecto/
 │
 ├── imagenes/
 │
-├── preprocesamiento_HSV.py
+├── preprocesamiento_HSV.ipynb
 │
-├── preprocesamiento_Filtro_Mediana.py
+├── preprocesamiento_Filtro_Mediana.ipynb
 │
 ├── Presentacion_Proyecto_Final_CNN.pptx
 │
@@ -98,19 +98,75 @@ Proyecto/
 
 ## Requisitos
 
-Instalar las dependencias necesarias:
+## Obtención del Dataset
 
-```bash
-pip install opencv-python
-pip install numpy
-```
+Antes de ejecutar los scripts de preprocesamiento es necesario descargar el conjunto de datos utilizado en el proyecto.
+
+Dataset utilizado:
+
+https://www.kaggle.com/datasets/alxmamaev/flowers-recognition
+
+### Pasos
+
+1. Ingresar al enlace del dataset en Kaggle.
+2. Descargar el archivo comprimido (.zip).
+3. Extraer el contenido del archivo.
+4. Subir la carpeta `flowers` a tu Google Drive.
+5. Verificar que la estructura de carpetas sea la siguiente:
+
+```text
+flowers/
+│
+├── daisy
+├── dandelion
+├── rose
+├── sunflower
+└── tulip
+
+## Montar tu Google Drive en Google Colab
+
+Abre Google Colab
+
+Fuente:
+
+https://colab.research.google.com/
+
+Antes de ejecutar el notebook de la CNN es necesario montar Google Drive:
+
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+
+---
+
+## Entrenamiento de la CNN
+
+1. Abrir el notebook `Proyecto_Final_RGB_Flowers.ipynb`.
+2. Modificar la variable de ruta del dataset (flowers) a tu google drive.
+3. Ejecutar el entrenamiento utilizando:
+
+   * Dataset original (flowers).
+   * Dataset procesado con filtro de mediana.
+   * Dataset procesado con ecualización HSV.
+
+4. Registrar las métricas obtenidas.
+
+Métricas evaluadas:
+
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+* Matriz de Confusión
+
+---
 
 ---
 
 ## Ejecución del Filtro de Mediana
 
 ```bash
-python preprocesamiento_Filtro_Mediana.py
+python preprocesamiento_Filtro_Mediana.ipynb
 ```
 
 Resultado:
@@ -124,7 +180,7 @@ flowers_preprocesadas_Filtro_Mediana/
 ## Ejecución de la Ecualización HSV
 
 ```bash
-python preprocesamiento_HSV.py
+python preprocesamiento_HSV.ipynb
 ```
 
 Resultado:
@@ -132,28 +188,6 @@ Resultado:
 ```text
 flowers_preprocesadas_HSV/
 ```
-
----
-
-## Entrenamiento de la CNN
-
-1. Abrir el notebook `Proyecto_Final_RGB.ipynb`.
-2. Modificar la variable de ruta del dataset a tu google drive.
-3. Ejecutar el entrenamiento utilizando:
-
-   * Dataset original.
-   * Dataset procesado con filtro de mediana.
-   * Dataset procesado con ecualización HSV.
-
-4. Registrar las métricas obtenidas.
-
-Métricas evaluadas:
-
-* Accuracy
-* Precision
-* Recall
-* F1-Score
-* Matriz de Confusión
 
 ---
 
