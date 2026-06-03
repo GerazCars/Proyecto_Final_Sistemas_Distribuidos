@@ -71,19 +71,7 @@ Facilitar la identificación de patrones visuales por parte de la CNN.
 ```text
 Proyecto/
 │
-├── flowers/
-│
-├── flowers_preprocesadas_Filtro_Mediana/
-│
-├── flowers_preprocesadas_HSV/
-│
 ├── imagenes/
-│
-├── preprocesamiento_HSV.ipynb
-│
-├── preprocesamiento_Filtro_Mediana.ipynb
-│
-├── Presentacion_Proyecto_Final_CNN.pptx
 │
 ├── Proyecto_Final_RGB_Filtro_Mediana.ipynb
 │
@@ -91,7 +79,13 @@ Proyecto/
 │
 ├── Proyecto_Final_RGB_HSV.ipynb
 │
-└── README.md
+├──README.md
+│
+├── preprocesamiento_HSV.ipynb
+│
+├── preprocesamiento_Filtro_Mediana.ipynb
+│
+└── Presentacion_Proyecto_Final_CNN.pptx
 ```
 
 ---
