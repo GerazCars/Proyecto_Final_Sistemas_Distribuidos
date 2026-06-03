@@ -273,28 +273,29 @@ Métricas evaluadas:
 | Filtro de Mediana | 0.70 | 0.71 | 0.70 | 0.69 |
 | Ecualización HSV | 0.75 | 0.77 | 0.74 | 0.75 |
 
-### Observaciones
+## Observaciones
 
-- El modelo original obtuvo un Accuracy de 75%, sirviendo como referencia para evaluar el impacto de las técnicas de preprocesamiento.
-- El Filtro de Mediana redujo el Accuracy a 70%, indicando que la eliminación de detalles visuales afectó negativamente la capacidad de clasificación de la CNN.
-- La Ecualización del Histograma en HSV mantuvo un Accuracy de 75%, igualando el desempeño del modelo original.
-- El modelo con HSV mostró una mejora importante en la clasificación de la clase Tulip, alcanzando un Recall de 0.81 frente a 0.71 del modelo original.
-- La clase Rose presentó la mayor dificultad de clasificación en los tres experimentos, siendo confundida frecuentemente con Tulip debido a similitudes de color y forma.
-- La matriz de confusión muestra que la mayoría de las predicciones correctas se concentran sobre la diagonal principal, indicando un desempeño adecuado del modelo.
-- La Ecualización HSV permitió conservar mejor la información visual relevante que el Filtro de Mediana, obteniendo un equilibrio más favorable entre contraste y preservación de características.
+- El modelo original obtuvo un Accuracy de 75%, estableciendo la línea base para comparar el impacto de las técnicas de preprocesamiento.
+- El Filtro de Mediana redujo el Accuracy a 70% y disminuyó todas las métricas globales evaluadas, indicando una pérdida de información visual relevante para la clasificación.
+- La Ecualización del Histograma en HSV mantuvo el Accuracy global del modelo en 75%, obteniendo un desempeño equivalente al conjunto de datos original.
+- La técnica HSV incrementó ligeramente la Precision promedio de 0.76 a 0.77, lo que indica una reducción de algunas clasificaciones incorrectas.
+- La clase Tulip presentó una mejora importante al aplicar Ecualización HSV, aumentando su Recall de 0.71 a 0.81.
+- La clase Rose fue la categoría más difícil de clasificar en los tres experimentos, mostrando una alta confusión principalmente con Tulip debido a similitudes en color, forma y textura de los pétalos.
+- Las matrices de confusión muestran que el Filtro de Mediana dispersó más predicciones fuera de la diagonal principal, mientras que la Ecualización HSV conservó un comportamiento similar al modelo original.
+- Los resultados demuestran que no todo preprocesamiento mejora el desempeño de una CNN; la efectividad depende del tipo de transformación aplicada a las imágenes.
 
 ---
 ---
 
 ## Conclusiones
 
-Este proyecto permitió evaluar el impacto de diferentes técnicas de preprocesamiento sobre el desempeño de una Red Neuronal Convolucional para la clasificación de flores.
+Este proyecto permitió evaluar el impacto de dos técnicas de preprocesamiento de imágenes sobre el desempeño de una Red Neuronal Convolucional para la clasificación de flores.
 
-Los resultados mostraron que el Filtro de Mediana redujo el Accuracy del modelo de 75% a 70%, indicando que la eliminación de ciertos detalles visuales afectó negativamente el proceso de clasificación.
+Los resultados obtenidos muestran que el Filtro de Mediana no fue adecuado para este conjunto de datos, ya que redujo el Accuracy del modelo de 75% a 70% y disminuyó las métricas de Precision, Recall y F1-Score. Esto sugiere que la eliminación de ciertos detalles visuales afectó negativamente la capacidad de la red para distinguir las diferentes clases de flores.
 
-Por otro lado, la Ecualización del Histograma en HSV mantuvo el Accuracy del modelo original (75%) y mejoró la capacidad de identificación de algunas clases específicas, especialmente Tulip, al incrementar su Recall de 0.71 a 0.81.
+Por otro lado, la Ecualización del Histograma en HSV mantuvo el Accuracy global en 75%, equivalente al modelo original, y mejoró la clasificación de algunas clases específicas, especialmente Tulip, cuyo Recall aumentó de 0.71 a 0.81. Esto indica que el aumento de contraste permitió resaltar características visuales útiles sin degradar el desempeño general del modelo.
 
-Con base en los resultados obtenidos, la Ecualización HSV fue la técnica de preprocesamiento más adecuada para este dataset, ya que logró preservar la información visual relevante sin degradar el desempeño global de la red neuronal.
+Con base en los resultados obtenidos, la Ecualización HSV fue la técnica de preprocesamiento más adecuada para este problema de clasificación botánica, ya que conservó el rendimiento global de la CNN y mejoró la identificación de ciertas clases, mientras que el Filtro de Mediana eliminó información relevante para el proceso de aprendizaje.
 
 ---
 ---
