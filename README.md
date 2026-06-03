@@ -68,6 +68,8 @@ Proyecto/
 │
 ├── imagenes/
 │
+├── Presentacion_Proyecto_Final_CNN.pptx
+│
 ├── Proyecto_Final_RGB_Filtro_Mediana.ipynb
 │
 ├── Proyecto_Final_RGB_Flowers.ipynb
@@ -76,11 +78,9 @@ Proyecto/
 │
 ├── README.md
 │
-├── preprocesamiento_HSV.ipynb
-│
 ├── preprocesamiento_Filtro_Mediana.ipynb
 │
-└── Presentacion_Proyecto_Final_CNN.pptx
+└── preprocesamiento_HSV.ipynb
 ```
 
 ---
