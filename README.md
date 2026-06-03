@@ -122,7 +122,9 @@ flowers/
 ├── rose
 ├── sunflower
 └── tulip
+```
 
+---
 ## Montar tu Google Drive en Google Colab
 
 Abre Google Colab
@@ -131,25 +133,30 @@ Fuente:
 
 https://colab.research.google.com/
 
-Antes de ejecutar el notebook de la CNN es necesario montar Google Drive:
+Montar Google Drive
 
 ```python
 from google.colab import drive
 drive.mount('/content/drive')
+```
 
 ---
-
 ## Entrenamiento de la CNN
 
 1. Abrir el notebook `Proyecto_Final_RGB_Flowers.ipynb`.
 2. Modificar la variable de ruta del dataset (flowers) a tu google drive.
-3. Ejecutar el entrenamiento utilizando:
+```python
+DATASET_DIR = "/content/drive/MyDrive"
+```
+4. Ejecutar el entrenamiento utilizando:
 
    * Dataset original (flowers).
    * Dataset procesado con filtro de mediana.
    * Dataset procesado con ecualización HSV.
+  
+5. Realizar y Guardar el resultado de una Prueba Interactiva de la sección 8. del Entrenamiento de la CNN.
 
-4. Registrar las métricas obtenidas.
+6. Registrar las métricas obtenidas en cada entrenamiento.
 
 Métricas evaluadas:
 
@@ -158,7 +165,6 @@ Métricas evaluadas:
 * Recall
 * F1-Score
 * Matriz de Confusión
-
 ---
 
 ---
