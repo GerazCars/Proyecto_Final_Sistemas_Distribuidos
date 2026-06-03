@@ -144,7 +144,7 @@ DATASET_DIR = "/content/drive/MyDrive/flowers/"
   
 5. Realizar y Guardar el resultado de una Prueba Interactiva de la sección 8. del Entrenamiento de la CNN.
 
-6. Registrar las métricas obtenidas en cada entrenamiento.
+6. Registrar las métricas obtenidas en el entrenamiento.
 
 Métricas evaluadas:
 * Accuracy
@@ -195,7 +195,7 @@ DATASET_DIR = "/content/drive/MyDrive/flowers_preprocesadas_Filtro_Mediana/"
 
 14. Realizar y Guardar el resultado de una Prueba Interactiva de la sección 8. del Entrenamiento de la CNN.
 
-15. Registrar las métricas obtenidas en cada entrenamiento.
+15. Registrar las métricas obtenidas en el entrenamiento.
 
 Métricas evaluadas:
 * Accuracy
@@ -246,7 +246,7 @@ DATASET_DIR = "/content/drive/MyDrive/flowers_preprocesadas_HSV/"
 
 9. Realizar y Guardar el resultado de una Prueba Interactiva de la sección 8. del Entrenamiento de la CNN.
 
-10. Registrar las métricas obtenidas en cada entrenamiento.
+10. Registrar las métricas obtenidas en el entrenamiento.
 
 Métricas evaluadas:
 * Accuracy
