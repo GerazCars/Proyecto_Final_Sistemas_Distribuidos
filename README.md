@@ -74,7 +74,7 @@ Proyecto/
 │
 ├── Proyecto_Final_RGB_HSV.ipynb
 │
-├──README.md
+├── README.md
 │
 ├── preprocesamiento_HSV.ipynb
 │
@@ -249,30 +249,6 @@ Métricas evaluadas:
 ---
 ---
 
-### Original
-
-![Original](imagenes/original.jpg)
-
-![Original](imagenes/original_matriz_confusión.jpg)
-
----
-
-### Filtro de Mediana
-
-![Mediana](imagenes/median.jpg)
-
-![Mediana](imagenes/mediana_matriz_confusión.jpg)
-
----
-
-### Ecualización HSV
-
-![HSV](imagenes/hsv.jpg)
-
-![HSV](imagenes/hsv_matriz_confusión.jpg)
-
----
-
 ## Comparación Visual
 
 | Imagen Original | Filtro de Mediana | Ecualización HSV |
@@ -290,13 +266,28 @@ Métricas evaluadas:
 |----------------|------------------|------------------|
 | ![](imagenes/original_matriz_confusión.jpg) | ![](imagenes/mediana_matriz_confusión.jpg) | ![](imagenes/hsv_matriz_confusión.jpg) |
 
+### Observaciones
+
+- El modelo original obtuvo un Accuracy de 75%, sirviendo como referencia para evaluar el impacto de las técnicas de preprocesamiento.
+- El Filtro de Mediana redujo el Accuracy a 70%, indicando que la eliminación de detalles visuales afectó negativamente la capacidad de clasificación de la CNN.
+- La Ecualización del Histograma en HSV mantuvo un Accuracy de 75%, igualando el desempeño del modelo original.
+- El modelo con HSV mostró una mejora importante en la clasificación de la clase Tulip, alcanzando un Recall de 0.81 frente a 0.71 del modelo original.
+- La clase Rose presentó la mayor dificultad de clasificación en los tres experimentos, siendo confundida frecuentemente con Tulip debido a similitudes de color y forma.
+- La matriz de confusión muestra que la mayoría de las predicciones correctas se concentran sobre la diagonal principal, indicando un desempeño adecuado del modelo.
+- La Ecualización HSV permitió conservar mejor la información visual relevante que el Filtro de Mediana, obteniendo un equilibrio más favorable entre contraste y preservación de características.
+
 ---
 ---
 
 ## Conclusiones
 
-Este proyecto permitió analizar cómo diferentes técnicas de preprocesamiento pueden influir en la capacidad de clasificación de una CNN. Los resultados obtenidos permiten determinar cuál técnica proporciona una mejor representación de las características visuales presentes en las flores.
+Este proyecto permitió evaluar el efecto de diferentes técnicas de preprocesamiento sobre el desempeño de una CNN para clasificación de flores.
 
+Mediante la comparación de Accuracy, Precision, Recall, F1-Score y Matriz de Confusión fue posible determinar qué técnica proporcionó una mejor representación visual para el proceso de clasificación.
+
+Los resultados obtenidos muestran que el preprocesamiento puede influir significativamente en la capacidad de aprendizaje de una red neuronal, mejorando o degradando su desempeño dependiendo de la técnica aplicada.
+
+---
 ---
 
 ## Autor
