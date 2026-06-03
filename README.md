@@ -1,5 +1,5 @@
 # Proyecto_Final_Sistemas_Distribuidos_CNN
-En este repositorio encontrara todo lo solicitado del proyecto final CNN para el dataset flowers
+En este repositorio se encuentran los notebooks, resultados, evidencias visuales y análisis realizados para evaluar el impacto de diferentes técnicas de preprocesamiento sobre una Red Neuronal Convolucional (CNN) aplicada a la clasificación de flores.
 
 ## Descripción del Proyecto
 
@@ -266,6 +266,9 @@ Métricas evaluadas:
 |----------------|------------------|------------------|
 | ![](imagenes/original_matriz_confusión.jpg) | ![](imagenes/mediana_matriz_confusión.jpg) | ![](imagenes/hsv_matriz_confusión.jpg) |
 
+---
+
+### Tabla Comparativa de Métricas
 
 | Modelo | Accuracy | Macro Precision | Macro Recall | Macro F1-Score |
 |----------|----------|----------|----------|----------|
@@ -293,7 +296,7 @@ Este proyecto permitió evaluar el efecto de diferentes técnicas de preprocesam
 
 Los resultados obtenidos muestran que el Filtro de Mediana fue la técnica más adecuada para este conjunto de datos. Aunque el Accuracy global se mantuvo en 75%, equivalente al modelo original, se observó una ligera mejora en la Precision promedio, lo que indica una reducción de algunas clasificaciones incorrectas. Esto sugiere que la eliminación de ruido permitió preservar las características relevantes de las flores sin afectar la capacidad de clasificación de la red.
 
-Por otro lado, la Ecualización del Histograma en HSV redujo el Accuracy a 70% y disminuyó las métricas globales de desempeño. Esto indica que el incremento de contraste alteró información visual importante para la CNN, dificultando la correcta diferenciación entre algunas clases de flores.
+Por otro lado, la Ecualización del Histograma en HSV redujo el Accuracy a 70% y disminuyó las métricas globales de desempeño. Los resultados obtenidos demuestran que una mejora visual de la imagen no garantiza una mejora en el desempeño de una red neuronal, ya que algunas transformaciones pueden alterar características importantes para el proceso de clasificación.
 
 Con base en los resultados obtenidos, se concluye que el Filtro de Mediana fue la técnica de preprocesamiento que proporcionó el mejor equilibrio entre reducción de ruido y conservación de características visuales relevantes, siendo la opción más recomendable para este problema de clasificación botánica.
 
@@ -308,4 +311,4 @@ Matricula: 42208760
 
 Materia: Sistemas Distribuidos
 
-Fecha: 05 de Junio 2026
+Fecha de entrega: 12 de Junio de 2026
