@@ -310,7 +310,7 @@ Este proyecto permitió analizar cómo diferentes técnicas de preprocesamiento 
 
 | Imagen Original | Filtro de Mediana | Ecualización HSV |
 |----------------|------------------|------------------|
-| ![](imagenes/original.jpg) | ![](imagenes/mediana.jpg) | ![](imagenes/hsv.jpg) |
+| ![](imagenes/original.jpg) | ![](imagenes/median.jpg) | ![](imagenes/hsv.jpg) |
 
 ### Observaciones
 
@@ -321,7 +321,7 @@ Este proyecto permitió analizar cómo diferentes técnicas de preprocesamiento 
 
 | Modelo Original | Filtro de Mediana | Ecualización HSV |
 |----------------|------------------|------------------|
-| ![](imagenes/original_confusion_matrix.jpg) | ![](imagenes/mediana_confusion_matrix.jpg) | ![](imagenes/hsv_confusion_matrix.jpg) |
+| ![](imagenes/original_matriz_confusión.jpg) | ![](imagenes/mediana_matriz_confusión.jpg) | ![](imagenes/hsv_matriz_confusión.jpg) |
 
 ---
 
