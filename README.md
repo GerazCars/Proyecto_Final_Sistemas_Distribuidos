@@ -138,7 +138,7 @@ drive.mount('/content/drive')
 ```python
 DATASET_DIR = "/content/drive/MyDrive/flowers/"
 ```
-4. Ejecutar el entrenamiento utilizando:
+4. Ejecutar todas las celdas del entrenamiento utilizando:
 
    * Dataset original (flowers/).
   
@@ -182,7 +182,7 @@ input_dir = "/content/drive/MyDrive/flowers"
 ```python
 output_dir = "/content/drive/MyDrive/flowers_preprocesadas_Filtro_Mediana"
 ```
-10. Ejecutar Filtro de Mediana
+10. Ejecutar todas las celdas del Filtro de Mediana
 
 ```bash
 python preprocesamiento_Filtro_Mediana.ipynb
@@ -204,7 +204,7 @@ flowers_preprocesadas_Filtro_Mediana/
 ```python
 DATASET_DIR = "/content/drive/MyDrive/flowers_preprocesadas_Filtro_Mediana/"
 ```
-13. Ejecutar el entrenamiento utilizando:
+13. Ejecutar todas las celdas del entrenamiento utilizando:
 
    * Dataset procesado con filtro de mediana (flowers_preprocesadas_Filtro_Mediana/).
 
@@ -247,7 +247,7 @@ input_dir = "/content/drive/MyDrive/flowers"
 ```python
 output_dir = "/content/drive/MyDrive/flowers_preprocesadas_HSV"
 ```
-10. Ejecutar ecualización HSV
+19. Ejecutar todas las celdas de ecualización HSV
 
 ```bash
 python preprocesamiento_HSV.ipynb
@@ -263,19 +263,19 @@ flowers_preprocesadas_HSV/
 ├── sunflower
 └── tulip
 ```
-19. Regresar al notebook `Proyecto_Final_RGB_Flowers.ipynb`.
-20. Modificar la variable de ruta del dataset a tu google drive.
+20. Regresar al notebook `Proyecto_Final_RGB_Flowers.ipynb`.
+21. Modificar la variable de ruta del dataset a tu google drive.
 
 ```python
 DATASET_DIR = "/content/drive/MyDrive/flowers_preprocesadas_HSV/"
 ```
-13. Ejecutar el entrenamiento utilizando:
+22. Ejecutar todas las celdas del entrenamiento utilizando:
 
    * Dataset procesado con equalización HSV (flowers_preprocesadas_HSV/).
 
-9. Realizar y Guardar el resultado de una Prueba Interactiva de la sección 8. del Entrenamiento de la CNN.
+23. Realizar y Guardar el resultado de una Prueba Interactiva de la sección 8. del Entrenamiento de la CNN.
 
-10. Registrar las métricas obtenidas en el entrenamiento.
+24. Registrar las métricas obtenidas en el entrenamiento.
 
 Métricas evaluadas:
 * Accuracy
@@ -305,6 +305,23 @@ Métricas evaluadas:
 ## Conclusiones
 
 Este proyecto permitió analizar cómo diferentes técnicas de preprocesamiento pueden influir en la capacidad de clasificación de una CNN. Los resultados obtenidos permiten determinar cuál técnica proporciona una mejor representación de las características visuales presentes en las flores.
+
+## Comparación Visual
+
+| Imagen Original | Filtro de Mediana | Ecualización HSV |
+|----------------|------------------|------------------|
+| ![](imagenes/original.jpg) | ![](imagenes/mediana.jpg) | ![](imagenes/hsv.jpg) |
+
+### Observaciones
+
+- El filtro de mediana reduce ruido conservando los bordes principales de pétalos y hojas.
+- La ecualización HSV mejora el contraste y resalta detalles visuales manteniendo la información de color.
+
+## Comparación de Resultados
+
+| Modelo Original | Filtro de Mediana | Ecualización HSV |
+|----------------|------------------|------------------|
+| ![](imagenes/original_confusion_matrix.jpg) | ![](imagenes/mediana_confusion_matrix.jpg) | ![](imagenes/hsv_confusion_matrix.jpg) |
 
 ---
 
