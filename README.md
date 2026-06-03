@@ -87,6 +87,11 @@ Proyecto/
 
 ## Requisitos
 
+- Cuenta de Google
+- Google Drive
+- Google Colab
+- Dataset Flowers Recognition
+
 ## Obtención del Dataset
 
 Antes de ejecutar los scripts de preprocesamiento es necesario descargar el conjunto de datos utilizado en el proyecto.
@@ -116,9 +121,7 @@ flowers/
 ---
 ## Montar tu Google Drive en Google Colab
 
-Abre Google Colab
-
-Fuente:
+Acceder a Google Colab
 
 https://colab.research.google.com/
 
