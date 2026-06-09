@@ -281,15 +281,14 @@ Métricas evaluadas:
 
 ## Observaciones
 
--El modelo original obtuvo un Accuracy de 73%, estableciendo la referencia para evaluar el impacto de las técnicas de preprocesamiento aplicadas.
--El Filtro de Mediana mejoró el desempeño global de la CNN, incrementando el Accuracy de 73% a 75%.
--Además, el Filtro de Mediana aumentó la Macro Precision de 0.75 a 0.78 y el Macro F1-Score de 0.73 a 0.74, indicando una mejora en la capacidad de clasificación del modelo.
--La Ecualización del Histograma en HSV logró un Accuracy de 74%, superando ligeramente al modelo original, pero sin alcanzar el desempeño obtenido con el Filtro de Mediana.
--Las matrices de confusión muestran que el Filtro de Mediana redujo algunos errores de clasificación y obtuvo una distribución de predicciones más favorable que las otras técnicas evaluadas.
--La clase Rose presentó la mayor dificultad de clasificación en los tres experimentos, siendo confundida frecuentemente con Tulip debido a similitudes en color, forma y textura de los pétalos.
--Los resultados indican que la reducción moderada de ruido mediante el Filtro de Mediana permitió conservar la información relevante de las imágenes y mejorar el desempeño general de la red neuronal.
--Aunque la Ecualización HSV mejoró ligeramente el Accuracy respecto al modelo original, el incremento de contraste no resultó tan efectivo como la reducción de ruido para este problema de clasificación botánica.
-
+* El modelo original obtuvo un Accuracy de 73%.
+* El Filtro de Mediana logró el mejor resultado con 75% de Accuracy.
+* La Macro Precision aumentó de 0.75 a 0.78 con Filtro de Mediana.
+* La Ecualización HSV alcanzó 74% de Accuracy, sin superar al Filtro de Mediana.
+* Las matrices de confusión muestran menos errores con Filtro de Mediana.
+* Rose y Tulip fueron las clases con mayor confusión.
+* La reducción de ruido mejoró el desempeño de la CNN.
+* El aumento de contraste (HSV) fue menos efectivo que la reducción de ruido.
 ---
 ---
 
